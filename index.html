@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Data</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="top-nav">
+      <div class="logo">
+        <img src="img/TestLogo.jpg" alt="Logo">
+      </div>
+
+      <nav>
+        <ul>
+          <div class="menus">
+            <img src="img/home_FILL0_wght300_GRAD0_opsz24.jpg">
+            <li>Overview</li>
+          </div>
+          <div class="menus active">
+            <img src="img/group_FILL0_wght300_GRAD0_opsz24.png">
+            <li>Patience</li>
+          </div>
+          <div class="menus">
+            <img src="img/calendar_today_FILL0_wght300_GRAD0_opsz24.jpg">
+            <li>Schedule</li>
+          </div>
+          <div class="menus">
+            <img src="img/chat_bubble_FILL0_wght300_GRAD0_opsz24.jpg">
+            <li>Message</li>
+          </div>
+          <div class="menus">
+            <img src="img/credit_card_FILL0_wght300_GRAD0_opsz24.jpg">
+            <li>Transations</li>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="user">
+        <img src="img/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.jpg" alt="user icon">
+
+        <div class="user-dets">
+          <h5>Dr. Jose Simmons</h5>
+          <p>General Practitioner</p>
+        </div>
+
+        <img src="img/settings_FILL0_wght300_GRAD0_opsz24.jpg" alt="settings">
+      </div>
+    </header>
+
+    <div class="body-content">
+
+      <div class="sidebar">
+        <div class="patient-list">
+          <div class="patient">
+            <img src="./img/Layer 8.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Emily Williams</h4>
+              <p>Female, 18</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/Layer 1.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Ryan Johnson</h4>
+              <p>Male, 45</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/Layer 3.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Brandon Mitchell</h4>
+              <p>Male, 36</p>
+            </div>
+          </div>
+          <div class="patient select" id="jessica-taylor">
+            <img src="./img/profile-placeholder.png" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info ">
+              <h4>Jessica Taylor</h4>
+              <p>Female, 28</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/Layer 6.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Samantha Johnson</h4>
+              <p>Female, 56</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/Layer 12.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Ashley Martinez</h4>
+              <p>Female, 54</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/Layer 10.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Olivia Brown</h4>
+              <p>Female, 32</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/Layer 9.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Tyler Davis</h4>
+              <p>Male, 19</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/Layer 4.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Kevin Anderson</h4>
+              <p>Male, 30</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/Layer 5.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Dylan Thompson</h4>
+              <p>Male, 36</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/Layer 7.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Nathan Evans</h4>
+              <p>Male,58</p>
+            </div>
+          </div>
+          <div class="patient">
+            <img src="./img/pexels-photo-1222271.jpg" alt="Jessica Taylor" class="patient-img">
+            <div class="patient-info">
+              <h4>Mike Nolan</h4>
+              <p>Male, 31</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="vital-signs">
+          <h3>Diagnostic History</h3><br>
+
+          <div class="blood-pressure">
+            <h4>Blood Pressure</h4>
+            <canvas id="bloodPressureChart"></canvas>
+          </div>
+
+          <div class="vitals">
+            <div class="vital one">
+              <img src="./img/respiratory rate.jpg" alt="respiratory rate">
+              <p>Respiratory Rate</p>
+              <h4>20 bpm</h4><br>
+              <p>Normal</p>
+            </div>
+            <div class="vital two">
+              <img src="./img/temperature.jpg" alt="Temperature">
+              <p>Temperature</p>
+              <h4>98.6°F</h4><br>
+              <p>Normal</p>
+            </div>
+            <div class="vital three">
+              <img src="./img/HeartBPM.jpg" alt="heart rate">
+              <p>Heart Rate</p>
+              <h4>78 bpm</h4><br>
+              <p>Lower than Average</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="diagnostic-list">
+          <h3>Diagnostic List</h3><br>
+          <table>
+            <thead>
+              <tr>
+                <th>Problem/Diagnosis</th>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hypertension</td>
+                <td>Chronic high blood pressure</td>
+                <td>Under Observation</td>
+              </tr>
+              <tr>
+                <td>Type 2 Diabetes</td>
+                <td>Insulin resistance and elevated blood sugar</td>
+                <td>Cured</td>
+              </tr>
+              <tr>
+                <td>Asthma</td>
+                <td>Recurrent episodes of bronchial constriction</td>
+                <td>Inactive</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="patient-overview">
+          <div class="patient-details">
+            <img src="./img/profile-placeholder.png" alt="Jessica Taylor" class="patient-img-large">
+            <div class="details">
+              <h2 id="patient-name">Jessica Taylor</h2> <br>
+              <div class="cta">
+                <img src="img/BirthIcon.svg">
+                <p>Date of Birth<br> <b>August 23, 1996</b></p>
+              </div>
+              <div class="cta">
+                <img src="img/FemaleIcon.svg">
+                <p>Gender<br> <b>Female</b></p>
+              </div>
+              <div class="cta">
+                <img src="img/PhoneIcon.svg">
+                <p>Contact Info<br> <b>(415) 555-1234</b></p>
+              </div>
+              <div class="cta">
+                <img src="img/PhoneIcon.svg">
+                <p>Emergency Contacts<br> <b>(415) 555-5678</b></p>
+              </div>
+              <div class="cta">
+                <img src="img/InsuranceIcon.svg">
+                <p>Insurance Provider<br> <b>Sunrise Health Assurance</b></p>
+              </div>
+              <button class="active">Show All Information</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="lab-results">
+          <h4>Lab Results</h4><br>
+          <ul>
+            <li>Blood Tests <a href="#">Download</a></li>
+            <li>CT Scans <a href="#">Download</a></li>
+            <li>Radiology Reports <a href="#">Download</a></li>
+            <li>X-Rays <a href="#">Download</a></li>
+            <li>Urine Test <a href="#">Download</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
